@@ -1,9 +1,8 @@
 // db.js
 const { MongoClient } = require("mongodb");
-
-const mongoClientUri =
-  // "mongodb+srv://otipy:otipy123@stage-mongo.crsqm.mongodb.net/";
-  "mongodb+srv://HarshBansal:HarshBansal88@cluster0.ffsv2.mongodb.net/Practice?retryWrites=true&w=majority&appName=Cluster0";
+const dotenv = require("dotenv");
+dotenv.config();
+const mongoClientUri = process.env.CONNECTION_URL;
 const client = new MongoClient(mongoClientUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
