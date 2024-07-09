@@ -4,7 +4,7 @@
   "description": "Practice application",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon src/index.js"
+    "test": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
