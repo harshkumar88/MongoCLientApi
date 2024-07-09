@@ -6,7 +6,7 @@ const feedRoutes = require("./src/Routes/FeedRoutes");
 const infoRoutes = require("./src/Routes/InfoRoutes");
 const app = express();
 const port = process.env.PORT || 5000;
-// require("./Database/connection");
+require("./src/Database/connection");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
